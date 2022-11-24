@@ -42,7 +42,11 @@ class ConfigWebpackPlugin {
     }
     this.optionCheck(this.options);
   }
-
+function hello(indentSize, type) {
+    if (indentSize === 4 && type !== 'tab') {
+        console.log('Each next indentation will increase on 4 spaces');
+    }
+}
   // 对启用该插件进行必要参数校验
   optionCheck(options) {
     if (!options.productName) {
