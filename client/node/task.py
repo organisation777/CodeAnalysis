@@ -48,6 +48,7 @@ class Task(object):
         self.code = None
         self.msg = None
         self.data = None
+        self.data = None
         self._task_proc = None
         self._task_expired_time = None
 
