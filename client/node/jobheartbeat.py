@@ -44,6 +44,7 @@ class JobHeartBeat(object):
         self._job_id = job_id
         self._dog_server = dog_server
         self._event = threading.Event()  # 通过event事件控制心跳线程退出
+        self._event = threading.Event()
 
     def start(self):
         """
